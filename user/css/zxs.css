@@ -1,0 +1,30 @@
+.img {
+	height: 60%;
+}
+.zxs-name {
+	font-weight: bold;
+}
+.zxs-introduce {
+	font-size: 12px;
+	opacity: 0.5;
+}
+.zxs-pay{
+	color: red;
+	font-weight: bold;
+	font-size:20px;
+}
+.zxs-money{
+	color: red;
+	font-weight: bold;
+	font-size:20px;
+}
+.zxs-volume{
+	float: right;
+	font-size: 12px;
+	opacity: 0.5;
+}
+
+
+
+
+

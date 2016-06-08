@@ -1,0 +1,36 @@
+#messageAnalyse{
+    background-color: #44B549;
+    color:white;
+}
+#messageAnalyse:hover{
+    background-color: #44B549;
+}
+#miniline{
+    display: block;
+    font-family: "微软雅黑";
+    line-height: 50px;
+    font-size: 18px;
+    margin-left: 10px;
+    border-bottom: 1px solid #44B549;
+}
+body{
+    width: 600px;
+}
+.chart{
+    width: 100%;
+    height: 500px;
+    margin-top: 30px;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+}
+#main{
+    height:400px;margin-top:20px;
+    border:1px solid #ccc;
+    margin-left: 10px;
+    width: 700px;
+}
+#drop{
+    width: 100px;
+    margin-left: 10px;
+    margin-top: 10px;
+}

@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>靓人-造型师</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" type="text/css" href="stylist.css" />
+		<link rel="stylesheet" type="text/css" href="bootstrap-3.3.4-dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css" />
+		<script src="bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/upimg.js"></script>
+		<script src="js/stylist.js"></script>
+		<script type="text/javascript" src="http://www.francescomalagrino.com/BootstrapPageGenerator/3/js/jquery-2.0.0.min.js"></script>
+		<script type="text/javascript" src="http://www.francescomalagrino.com/BootstrapPageGenerator/3/js/jquery-ui"></script>
+		<link href="http://www.francescomalagrino.com/BootstrapPageGenerator/3/css/bootstrap-combined.min.css" rel="stylesheet" media="screen">
+		<script type="text/javascript" src="http://www.francescomalagrino.com/BootstrapPageGenerator/3/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div>
+			<div id='header'>
+				<img src="img/logo.jpg" id='header_logo'>
+				<span class='header_text'>xx</span>
+				<span class='header_text'>xx</span>
+				<span class='header_text'>xx</span>
+				<span class='header_text'>xx</span>
+				<span class='header_text'>xx</span>
+				<img src="img/user.jpg" id='header_user' class='img-circle'>
+			</div>
+
+			<div id='main'>
+				<div id='big-pic'>
+					<div class='user-info'>
+						<h3 class='user-name'>
+							<span>柠凉</span>
+						</h3>
+						<div class='money-info'>
+							<div class='item money-in'>
+								<em>0</em>
+								<span>收入</span>
+							</div>
+							<div class='item money-out'>
+								<em>0</em>
+								<span>支出</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class='functions'>
+					<div class='slider'>
+						<div class='user-pic'>
+							<div class='user-pic-bg'></div>
+							<img src="img/user.jpg" class='img'>
+						</div>
+						<ul>
+							<li>
+								<i class="fa fa-star"></i>
+								<span class='slider_text'>店铺</span>
+								<i class="fa fa-caret-right"></i>
+							</li>
+							<li>
+								<i class="fa fa-user"></i>
+								<span class='slider_text'>账户</span>
+								<i class="fa fa-caret-right"></i>
+							</li>
+							<li>
+								<i class="fa fa-copy"></i>
+								<span class='slider_text'>接单</span>
+								<i class="fa fa-caret-right"></i>
+							</li>
+							<li>
+								<i class="fa fa-share-square-o"></i>
+								<span class='slider_text'>反馈</span>
+								<i class="fa fa-caret-right"></i>
+							</li>
+							<li>
+								<i class="fa fa-cny"></i>
+								<span class='slider_text'>收支</span>
+								<i class="fa fa-caret-right"></i>
+							</li>
+						</ul>
+					</div>
+
+					<div id='shop' class='functions_boxs'>
+						<div class='title_boxs'>
+							<span class='title_text'>店铺</span>
+						</div>
+						<div class='maintext'>
+							<div id='shop-info'>
+								<span id='shopname'>店铺图片:</span>
+								<div>
+									<img src="img/userimg4.jpg" id='shopimg'>
+								</div>
+								<div id='stylistworks'>
+									<div id='works'>
+										<span>作品:</span>
+									</div>
+									<div id='worksimg'>
+										<img src="img/work1.jpeg">
+										<img src="img/work2.jpg">
+										<img src="img/work3.jpg">
+										<img src="img/work4.jpeg">
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div id='accountmange' class='functions_boxs'>
+						<div class='title_boxs'>
+							<span class='title_text'>账户管理</span>
+						</div>
+						<div class='maintext'>
+							<div id='choice'>
+								<div class='choice_text'>
+									<span>个人资料</span>
+								</div>
+								<div class='choice_text'>
+									<span>头像设置</span>
+								</div>
+								<!-- <div class='choice_text'>
+									<span>手机设置</span>
+								</div> -->
+								<div class='choice_text'>
+									<span>修改密码</span>
+								</div>
+							</div>
+							<form id='personal_info' class='choice_info'>
+								<div class='p_i'>
+									<label class='label-name' for="nick">昵称</label>
+									<div class='group'>
+										<input type="text" name='nickname' id='nick' autocomplete='off'data-validate='nick' placeholder='请输入昵称'>
+										<!-- <p class='tip'></p> -->
+									</div>
+								</div>
+								<div class='p_i'>
+									<label class='label-name' for="job">职位</label>
+									<div class='group'>
+										<select name="job" id="job">
+											<option value="0">请选择职位</option>
+											<option value="1">学生</option>
+											<option value="2">专业造型师</option>
+										</select>
+										<!-- <p class='tip'></p> -->
+									</div>
+								</div>
+								<div class='p_i'>
+									<label class='label-name' for="address">城市</label>
+									<div class='group'>
+										<input type="text" name='province' id='province' autocomplete='off' data-validate='province' placeholder='请输入省份'>省
+										<input type="text" name='city' id='city' autocomplete='off' data-validate='city' placeholder='请输入市'>市
+										<input type="text" name='area' id='area' autocomplete='off' data-validate='area' placeholder='请输入县'>县
+									</div>
+								</div>
+								<div class='p_i'>
+									<label class='label-name'>性别</label>
+									<div class='group' id='radio-group'>
+										<label>
+											<input type="radio" hidefocus='true' value='0' name='sex'>男
+										</label>
+										<label>
+											<input type="radio" hidefocus='true' value='1' name='sex'>女
+										</label>
+									</div>
+								</div>
+								<div class='p_i'>
+									<label class='label-name' for="aboutme">个性签名</label>
+									<div class='group'>
+										<textarea name="aboutme" id="aboutme" cols="30" rows="5" class='textarea'></textarea>
+									</div>
+								</div>
+								<div class='p_i'>
+									<span id='submit' hidefocus='true' aria-role='button' class='submit'>保存</span>
+								</div>
+							</form>
+
+							<div id='setimg'>
+								<input type="file" onchange="previewImage(this)" />
+								<div id="preview">
+    								<img id="imghead" border=0 src="img/user.jpg"  width='190px' height='190px'/>
+								</div>
+								<span id='submit' hidefocus='true' aria-role='button' class='submit'>保存</span>
+							</div>
+
+							<form id='resetpw'>
+								<div class='pw'>
+									<label class='label-name' for='oldpw'>当前密码</label>
+									<div class='group'>
+										<input type="password" name='oldpw' placeholder='请输入密码'>
+										<!-- <p class='tip'></p> -->
+									</div>
+								</div>
+								<div class='pw'>
+									<label class='label-name' for="newpw">新密码</label>
+									<div class='group'>
+										<input type="password" data-validate='password' name='newpw' id='newpw' placeholder='请输入密码'>
+										<!-- <p class='tip'></p> -->
+									</div>
+								</div>
+								<div class='pw'>
+									<label class='label-name' for="confirm">确认密码</label>
+									<div class='group'>
+										<input type="password" name='confirm' id='confirm' placeholder='请输入密码'>
+										<!-- <p class='tip'></p> -->
+									</div>
+								</div>
+								<div class='pw'>
+									<div class='group'>
+										<span id='resetpw-btn-save' hidefocus='true'aria-role='button'>保存</span>
+									</div>
+								</div>
+							</form>
+
+						</div>
+					</div>
+
+					<!-- 默认为接单系统 -->
+					<div id='order' class='functions_boxs'>
+						<div class='title_boxs'>
+							<span class='title_text'>接单系统</span>
+						</div>
+						<div class='maintext'>
+							<ul>
+								<li class='userorder'>
+									<img src="img/userimg1.jpg">
+									<div class='group'>
+										<div class='username'>肖夏</div>
+										<div class='need'>
+											需求：
+											<span class='content'>做美甲，帅气一点</span>
+										</div>
+									</div>
+									<div class='interact'>
+										<i class="fa fa-commenting-o fa-lg"></i>
+									</div>
+									<div class='answer'>
+										<div class='yes'>接受</div>
+										<div class='yesed'>已接受</div>
+										<div class='no'>拒绝</div>
+									</div>
+								</li>
+								<li class='userorder'>
+									<img src="img/userimg2.jpg">
+									<div class='group'>
+										<div class='username'>邱琪</div>
+										<div class='need'>
+											需求：
+											<span class='content'>做美甲，帅气一点</span>
+										</div>
+									</div>
+									<div class='interact'>
+										<i class="fa fa-commenting-o fa-lg"></i>
+									</div>
+									<div class='answer'>
+										<div class='yes'>接受</div>
+										<div class='yesed'>已接受</div>
+										<div class='no'>拒绝</div>
+									</div>
+								</li>
+								<li class='userorder'>
+									<img src="img/userimg3.jpg">
+									<div class='group'>
+										<div class='username'>胡涛</div>
+										<div class='need'>
+											需求：
+											<span class='content'>做美甲，帅气一点</span>
+										</div>
+									</div>
+									<div class='interact'>
+										<i class="fa fa-commenting-o fa-lg"></i>
+									</div>
+									<div class='answer'>
+										<div class='yes'>接受</div>
+										<div class='yesed'>已接受</div>
+										<div class='no'>拒绝</div>
+									</div>
+								</li>
+								<li class='userorder'>
+									<img src="img/userimg4.jpg">
+									<div class='group'>
+										<div class='username'>余亮</div>
+										<div class='need'>
+											需求：
+											<span class='content'>做美甲，帅气一点</span>
+										</div>
+									</div>
+									<div class='interact'>
+										<i class="fa fa-commenting-o fa-lg"></i>
+									</div>
+									<div class='answer'>
+										<div class='yes'>接受</div>
+										<div class='yesed'>已接受</div>
+										<div class='no'>拒绝</div>
+									</div>
+								</li>
+								<li class='userorder'>
+									<img src="img/userimg5.jpg">
+									<div class='group'>
+										<div class='username'>秦雨</div>
+										<div class='need'>
+											需求：
+											<span class='content'>做美甲，帅气一点</span>
+										</div>
+									</div>
+									<div class='interact'>
+										<i class="fa fa-commenting-o fa-lg"></i>
+									</div>
+									<div class='answer'>
+										<div class='yes'>接受</div>
+										<div class='yesed'>已接受</div>
+										<div class='no'>拒绝</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div id='feedback' class='functions_boxs'>
+						<div class='title_boxs'>
+							<span class='title_text'>反馈系统</span>
+						</div>
+						<div class='maintext'>
+							<div id='choice'>
+								<div class='choice_text'>顾客评价</div>
+								<div class='choice_text'>客服</div>
+							</div>
+							<div id='customer'>
+								<div class="accordion-group">
+									<div class="accordion-heading">
+						 				<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-715395" href="#accordion-element-236338">
+						 					<img src="img/userimg6.jpg">
+						 					<span>弈秋对你的评价</span>
+						 				</a>
+									</div>
+									<div id="accordion-element-236338" class="accordion-body collapse in">
+										<div class="accordion-inner">
+											<div>
+												<span>美甲做的还不错</span>
+											</div>
+											<div class='date'>
+												<span>2016-02-19</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-group">
+									<div class="accordion-heading">
+						 				<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-715395" href="#accordion-element-24316">
+						 					<img src="img/userimg6.jpg">
+						 					<span>弈秋对你的评价</span>
+						 				</a>
+									</div>
+									<div id="accordion-element-24316" class="accordion-body collapse">
+										<div class="accordion-inner">
+											<div>
+												<span>美甲做的还不错</span>
+											</div>
+											<div class='date'>
+												<span>2016-02-19</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-group">
+									<div class="accordion-heading">
+						 				<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-47946" href="#accordion-element-488476">
+						 					<img src="img/userimg6.jpg">
+						 					<span>弈秋对你的评价</span>
+						 				</a>
+									</div>
+									<div id="accordion-element-488476" class="accordion-body collapse">
+										<div class="accordion-inner">
+											<div>
+												<span>美甲做的还不错</span>
+											</div>
+											<div class='date'>
+												<span>2016-02-19</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-group">
+									<div class="accordion-heading">
+						 				<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-47946" href="#accordion-element-832471">
+						 					<img src="img/userimg6.jpg">
+						 					<span>弈秋对你的评价</span>
+						 				</a>
+									</div>
+									<div id="accordion-element-832471" class="accordion-body collapse">
+										<div class="accordion-inner">
+											<div>
+												<span>美甲做的还不错</span>
+											</div>
+											<div class='date'>
+												<span>2016-02-19</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-group">
+									<div class="accordion-heading">
+						 				<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-24146" href="#accordion-element-281828">
+						 					<img src="img/userimg6.jpg">
+						 					<span>弈秋对你的评价</span>
+						 				</a>
+									</div>
+									<div id="accordion-element-281828" class="accordion-body collapse">
+										<div class="accordion-inner">
+											<div>
+												<span>美甲做的还不错</span>
+											</div>
+											<div class='date'>
+												<span>2016-02-19</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-group">
+									<div class="accordion-heading">
+						 				<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-24146" href="#accordion-element-164221">
+						 					<img src="img/userimg6.jpg">
+						 					<span>弈秋对你的评价</span>
+						 				</a>
+									</div>
+									<div id="accordion-element-164221" class="accordion-body collapse">
+										<div class="accordion-inner">
+											<div>
+												<span>美甲做的还不错</span>
+											</div>
+											<div class='date'>
+												<span>2016-02-19</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id='customerservice'>
+								<div id='maintext'>
+									若有什么问题，请联系
+									<div id='contact'>
+										<span>客服</span>
+										<i class="fa fa-commenting-o fa-lg"></i>
+									</div>
+									
+								</div>
+							</div>
+							<!-- <div class="accordion-group">
+								<div class="accordion-heading">
+						 			<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-500975" href="#accordion-element-393756">选项卡 #1</a>
+								</div>
+								<div id="accordion-element-393756" class="accordion-body collapse in">
+									<div class="accordion-inner">
+										功能块...
+									</div>
+								</div>
+							</div>
+							<div class="accordion-group">
+								<div class="accordion-heading">
+						 			<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-500975" href="#accordion-element-20098">选项卡 #2</a>
+								</div>
+								<div id="accordion-element-20098" class="accordion-body collapse">
+									<div class="accordion-inner">
+										功能块...
+									</div>
+								</div>
+							</div> -->
+												
+						</div>
+					</div>
+
+					<div id='income_expenses' class='functions_boxs'>
+						<div class='title_boxs'>
+							<span class='title_text'>收支明细</span>
+						</div>
+						<div class='maintext'>
+							<div id='choice'>
+								<div class='choice_text'>
+									<span>收入</span>
+								</div>
+								<div class='choice_text'>
+									<span>支出</span>
+								</div>
+							</div>
+							<div id='income'>
+								<ul>
+									<li>
+										<img src="img/userimg5.jpg" class='customerimg'>
+										<div class='group1'>
+											<div class='customername'>奈奈</div>
+											<div class='content'>
+												需求：做美甲，帅气一点
+											</div>
+										</div>
+										<div class='group2'>
+											<div class='money_in'>
+												收取:
+												<span class='money'>￥40</span>
+											</div>
+											<div class='date'>2016-02-15</div>
+										</div>
+									</li>
+									<li>
+										<img src="img/userimg5.jpg" class='customerimg'>
+										<div class='group1'>
+											<div class='customername'>奈奈</div>
+											<div class='content'>
+												需求：做美甲，帅气一点
+											</div>
+										</div>
+										<div class='group2'>
+											<div class='money_in'>
+												收取:
+												<span class='money'>￥40</span>
+											</div>
+											<div class='date'>2016-02-15</div>
+										</div>
+									</li>
+									<li>
+										<img src="img/userimg5.jpg" class='customerimg'>
+										<div class='group1'>
+											<div class='customername'>奈奈</div>
+											<div class='content'>
+												需求：做美甲，帅气一点
+											</div>
+										</div>
+										<div class='group2'>
+											<div class='money_in'>
+												收取:
+												<span class='money'>￥40</span>
+											</div>
+											<div class='date'>2016-02-15</div>
+										</div>
+									</li>
+									<li>
+										<img src="img/userimg5.jpg" class='customerimg'>
+										<div class='group1'>
+											<div class='customername'>奈奈</div>
+											<div class='content'>
+												需求：做美甲，帅气一点
+											</div>
+										</div>
+										<div class='group2'>
+											<div class='money_in'>
+												收取:
+												<span class='money'>￥40</span>
+											</div>
+											<div class='date'>2016-02-15</div>
+										</div>
+									</li>
+									<li>
+										<img src="img/userimg5.jpg" class='customerimg'>
+										<div class='group1'>
+											<div class='customername'>奈奈</div>
+											<div class='content'>
+												需求：做美甲，帅气一点
+											</div>
+										</div>
+										<div class='group2'>
+											<div class='money_in'>
+												收取:
+												<span class='money'>￥40</span>
+											</div>
+											<div class='date'>2016-02-15</div>
+										</div>
+									</li>
+									<li>
+										<img src="img/userimg5.jpg" class='customerimg'>
+										<div class='group1'>
+											<div class='customername'>奈奈</div>
+											<div class='content'>
+												需求：做美甲，帅气一点
+											</div>
+										</div>
+										<div class='group2'>
+											<div class='money_in'>
+												收取:
+												<span class='money'>￥40</span>
+											</div>
+											<div class='date'>2016-02-15</div>
+										</div>
+									</li>
+									<li>
+										<img src="img/userimg5.jpg" class='customerimg'>
+										<div class='group1'>
+											<div class='customername'>奈奈</div>
+											<div class='content'>
+												需求：做美甲，帅气一点
+											</div>
+										</div>
+										<div class='group2'>
+											<div class='money_in'>
+												收取:
+												<span class='money'>￥40</span>
+											</div>
+											<div class='date'>2016-02-15</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div id='expenses'>
+								<ul>
+									<li>
+										<img src="img/userimg4.jpg" class='stylistimg'>
+										<div class='group1'>
+											<div class='stylistname'>潇潇</div>
+											<div class='content'>
+												需求：做美甲，帅气一点
+											</div>
+										</div>
+										<div class='group2'>
+											<div class='money_out'>
+												花费:
+												<span class='money'>￥40</span>
+											</div>
+											<div class='date'>2016-02-15</div>
+										</div>
+									</li>
+									<li>
+										<img src="img/userimg4.jpg" class='stylistimg'>
+										<div class='group1'>
+											<div class='stylistname'>潇潇</div>
+											<div class='content'>
+												需求：做美甲，帅气一点
+											</div>
+										</div>
+										<div class='group2'>
+											<div class='money_out'>
+												花费:
+												<span class='money'>￥40</span>
+											</div>
+											<div class='date'>2016-02-15</div>
+										</div>
+									</li>
+									<li>
+										<img src="img/userimg4.jpg" class='stylistimg'>
+										<div class='group1'>
+											<div class='stylistname'>潇潇</div>
+											<div class='content'>
+												需求：做美甲，帅气一点
+											</div>
+										</div>
+										<div class='group2'>
+											<div class='money_out'>
+												花费:
+												<span class='money'>￥40</span>
+											</div>
+											<div class='date'>2016-02-15</div>
+										</div>
+									</li>
+									<li>
+										<img src="img/userimg4.jpg" class='stylistimg'>
+										<div class='group1'>
+											<div class='stylistname'>潇潇</div>
+											<div class='content'>
+												需求：做美甲，帅气一点
+											</div>
+										</div>
+										<div class='group2'>
+											<div class='money_out'>
+												花费:
+												<span class='money'>￥40</span>
+											</div>
+											<div class='date'>2016-02-15</div>
+										</div>
+									</li>
+									<li>
+										<img src="img/userimg4.jpg" class='stylistimg'>
+										<div class='group1'>
+											<div class='stylistname'>潇潇</div>
+											<div class='content'>
+												需求：做美甲，帅气一点
+											</div>
+										</div>
+										<div class='group2'>
+											<div class='money_out'>
+												花费:
+												<span class='money'>￥40</span>
+											</div>
+											<div class='date'>2016-02-15</div>
+										</div>
+									</li>
+									<li>
+										<img src="img/userimg4.jpg" class='stylistimg'>
+										<div class='group1'>
+											<div class='stylistname'>潇潇</div>
+											<div class='content'>
+												需求：做美甲，帅气一点
+											</div>
+										</div>
+										<div class='group2'>
+											<div class='money_out'>
+												花费:
+												<span class='money'>￥40</span>
+											</div>
+											<div class='date'>2016-02-15</div>
+										</div>
+									</li>
+									<li>
+										<img src="img/userimg4.jpg" class='stylistimg'>
+										<div class='group1'>
+											<div class='stylistname'>潇潇</div>
+											<div class='content'>
+												需求：做美甲，帅气一点
+											</div>
+										</div>
+										<div class='group2'>
+											<div class='money_out'>
+												花费:
+												<span class='money'>￥40</span>
+											</div>
+											<div class='date'>2016-02-15</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div id='footer'>
+				<div class='waper'>
+					<div class='footer_intro'>
+						<div class='footer_link'>
+							<ul>
+								<li>
+									<a href="无" target="_blank">网站首页</a>
+								</li>
+								<li>
+									<a href="无" target="_blank">联系我们</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

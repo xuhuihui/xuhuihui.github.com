@@ -1,0 +1,18 @@
+#messageManger{
+    background-color: #44B549;
+    color:white;
+}
+#messageManger:hover{
+    background-color: #44B549;
+}
+#miniline{
+    display: block;
+    font-family: "微软雅黑";
+    line-height: 50px;
+    font-size: 18px;
+    margin-left: 10px;
+    border-bottom: 1px solid #44B549;
+}
+body{
+    width: 990px;
+}

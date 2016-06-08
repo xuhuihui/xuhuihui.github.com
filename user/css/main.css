@@ -1,0 +1,132 @@
+/*第一部分*/
+body{
+	font-family: "微软雅黑";
+}
+.head {
+	height: 100%;
+	width: 100%;
+	display: inline-block;
+	letter-spacing: 0.5px;
+	font-family: "微软雅黑";
+	line-height: 1.6;
+	font-size: 18px;
+	background-color: #dfc9eb;
+}
+.logo-img,.head-img {
+    width: 39px;
+    height: 37px;
+    margin-left: -60px;
+    border-radius: 1.8em;
+}
+.navbar-brand {
+    padding: 3px 0 0 20px;
+    margin-top: 5px;
+}
+.back-dh {
+    margin-bottom: 0;
+   background: #dfc9eb;
+}
+#pink {
+    margin-right: -80px;
+    color: #f13c73;   /*#ff9966;*/    
+}
+#pink:hover{
+    color: #e40045;   /*ff0033;*/
+}
+
+/*标题造型师*/
+.container {
+	min-width: 1000px;
+}
+.container .title {
+	padding: 15px 0;
+	border-bottom: 1px solid white;
+}
+.container .title span{
+	font-size: 18px;
+	font-weight: bold;
+	font-family: "微软雅黑";
+}
+/*造型内容*/
+.container .zx-content,
+.container .zxs-select,
+.container .zx-tool-bar {
+	padding: 25px 10px 10px 10px;
+}
+.container .zx-content .row >li:first-child,
+.container .zxs-select .row >li:first-child {
+	border-radius: 10px 0 0 10px;
+	color: white;
+	background: #F7ACE1;
+}
+.container .zx-content .row >li:last-child,
+.container .zxs-select .row >li:last-child {
+	border-radius: 0 10px 10px 0;
+}
+/*.container .zx-content .row div:hover,
+.container .zxs-select .row div:hover {
+	color: red;
+}*/
+.container .zx-content {
+	border-bottom: 1px solid #edf1f2;
+}
+.container .zx-content .zx-content-nav .zx-content-item {
+	list-style: none;
+	float: left;
+}
+.container .zxs-select .row li,
+.container .zx-content .row li {
+	list-style: none;
+	text-align: center;
+	padding: 5px 0 5px 0;
+	background: #F7EDED;
+}
+.container .zxs-select .row li:hover,
+.container .zx-content .row li:hover {
+	background: #FBE2E2;
+}
+
+
+.container .zx-tool-bar {
+	height: 46px;
+	border-top: 1px solid #d0d6d9;
+	background: #f9f9f9;
+}
+
+
+
+
+.u-flyer {
+	display: block;
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	position: absolute;
+	z-index: 99999;
+}
+
+
+
+/*第二部分*/
+.foot {
+	height: 100%;
+	width: 100%;
+	display: inline-block;
+	letter-spacing: 0.5px;
+	font-family: "微软雅黑";
+	line-height: 1.6;
+	font-size: 18px;
+}
+
+.copyright {    
+    padding: 5px 0;
+    margin-top: 3%;
+    height: 5%;   
+    background-color: #a56cd8;
+}
+.copyright p {   
+   text-align: center;
+   font-size: 15px;
+   color: #7c1f7c;
+}
+

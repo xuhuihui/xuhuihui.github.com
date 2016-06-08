@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>订购</title>
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/buy.css">
+	<link href="img/logo.ico" rel="shortcut icon">
+	<link href="css/shop_cart.css" rel="stylesheet">
+</head>
+<body>
+	<canvas id='canvas'>
+	  Canvas not supported
+	</canvas>
+	<div class="head">
+		<nav class="navbar navbar-default back-dh">
+		  <div class="container">
+		    <div class="navbar-header">
+		      <a class="navbar-brand" href="#">
+		        <img src="img/logo.jpg" alt="logo" class="logo-img"></a>            
+		    </div>
+
+		    <div class="collapse navbar-collapse" id="navbar">
+		     <ul class="nav navbar-nav">
+		      <li><a href="first.html">首页</a></li>
+		      <li><a href="#">造型师</a></li>
+		      <li><a href="#">活动</a></li>
+		      <li><a href="#">...</a></li>
+		     </ul>
+		      <ul class="nav navbar-nav navbar-right">
+		      <li><a href="logged.html" id="pink">开启我的造型之旅 &raquo;</a></li> </ul>
+		      <form class="navbar-form navbar-right" role="search">
+		        <div class="form-group">             
+		          <input type="text" class="form-control" placeholder="你感兴趣的...">
+		        </div>
+		        <button type="submit" class="btn btn-default">
+		          <span class="glyphicon glyphicon-search"></span>
+		        </button>
+		      </form>        
+		    </div> <!-- /.navbar-collapse -->
+		  </div> <!-- /.container -->
+		 </nav>
+	</div>
+
+	<div class="container">
+		<div class="row intervier">
+			<div class="left col-xs-6">
+				  	<ul class="move">
+				  		<li class="bigbox"><img src="img/finger-1.png"></li>
+				  		<li class="smallbox first-smallbox"><img src="img/finger-1.png"></li>
+				  		<li class="smallbox"><img src="img/finger-2.png"></li>
+				  		<li class="smallbox"><img src="img/finger-3.png"></li>
+				  		<li class="smallbox"><img src="img/finger-4.png"></li>
+				  		<li class="smallbox"><img src="img/finger-5.png"></li>
+				  		<div class="clear"></div>
+				  	</ul>
+				  </div>
+			<div class="right col-xs-6">
+				<p><img src="img/zxs.jpg" alt="..." class="img-circle"></p>
+				<h3><span class="zxs-name">徐慧慧</span>
+					<span class="online">在线</span>
+<!-- 					<i class="fa fa-check-square"></i>
+					<i class="fa fa-times"></i> -->
+           <i class="fa fa-star" title="关注此人"></i></span>
+				</h3>
+				<p><span class="zxs-introduce">靓人，打造你的专属造型</span></p>
+				<p><span class="zxs-job">职称：初级造型师</span></p>
+				<p><span class="zxs-pay">价格：￥
+					<span class="pay-number">150</span>
+				</span></p>
+				<p><span class="zxs-volume">交易量：50笔</span></p>
+				<p><span class="zxs-believe">信用值：80</span></p>
+				<div class="bar"></div>
+				<p><span class="zxs-good">好评率：80%</span></p>
+				<button class="btn btn-primary buy">立即下单</button>
+				<button class="btn btn-primary wait">加入候选栏</button>
+			</div>
+		</div>
+
+		<div class="row comment-1">
+			<p><span class="comment-number">累计评论：xx条</span></p>
+		</div>
+		<div class="row comment-2"></div>
+
+		<!-- 购物车 -->
+			<div class="shop_cart">
+			<a>
+				<img src="img/shop_cart.png" class="cart_img">
+			    <p>候选栏</p>
+			</a>
+			</div>  
+
+
+		</div>
+
+
+	</div>
+
+	<!-- 购物车 -->
+	<div class="wrap">
+		<div class="top">
+	        <a href="/case/shop/shopclass.html" class="aleft"></a>
+	        <h1></h1>
+	        <a href="#" class="aright"></a>
+		</div>
+	<form method="post" action="order.html"> 
+	<div class="shop_list">
+		<div class="cart clear">
+	   		<div class="shadow">
+	        <table width="100%" border="0">
+	            <tr>
+	                <td width="90%">
+	                  <h4>造型师</h4></li>
+	                </td>
+	                <td width="10%"> <input type="checkbox" class="checkbox"  name="check_all" id="check_all" > </td>
+	            </tr>
+	        </table>
+	     
+	       
+	       <div class="c_list cb">
+	       	<ul>
+	        	<li>
+	            	<table>
+	                	<tr>
+	                    	<td width="15%"><img src="img/1.jpg" width="52" height="44"></td>
+	                        <td width="65%">
+	                        	<p class="name">徐慧慧-中级造型师</p>
+	                            <p>￥<span class="lse">30</span></p>
+	                        </td>
+	                        <td width="10%" valign="middle"><a href="#" class="del">删除</a></td>
+	                        <td width="10%"> <input type="checkbox" class="checkbox"  name="check_item" id="check_item"></td>
+	                    </tr>
+	                </table>
+	              </li>
+	             
+	              <li> 
+	               <table>
+	                	<tr>
+	                    	<td width="15%"><img src="img/1.jpg" width="52" height="44"></td>
+	                        <td width="65%">
+	                        	<p class="name">徐慧慧-中级造型师</p>
+	                            <p>￥<span class="lse">30</span></p>
+	                        </td>
+	                        <td width="10%" valign="middle"><a href="#" class="del">删除</a></td>
+	                        <td width="10%"> <input type="checkbox" class="checkbox"  name="check_item" id="check_item"></td>
+	                    </tr>
+	                </table>
+	                </li>
+	        </ul>
+	       </div>
+	    </div>  
+	    </div>
+	</div>
+
+	<div class="cart_bg">
+	<table width="100%" border="0">
+	    <tr>
+	    	<td width="3%"></td>
+	        <td width="10%"><input type="checkbox" class="checkbox" id="box_all"></td>
+	        <td width="20%">全选</td>
+	        <td width="44%">
+	            <p> <span class="pl15">金额合计：</span><span class="ff6">￥</span><span class="ff6 ff5">60</span></p>
+	        </td>
+	        <td width="20%"><button class="submit">去结算</button></td>
+	        <td width="3%"></td>
+	    </tr>
+	</table>
+	</div> 
+	</form>
+	</div>
+
+
+	<div class="foot">
+		<div class="copyright">    
+		     <p>版权所有 © Copyright   靓人团队  粤ICP备16019377号-1</p>      
+		</div>
+	</div>
+
+
+</body>
+<script src="js/jquery-1.12.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/buy.js"></script>
+<script src="js/buy-show.js"></script>
+<script src='js/requestNextAnimationFrame.js'></script>
+<script type="text/javascript" src="js/sprites.js"></script>
+<script src="js/dropsnow.js"></script>
+<script type="text/javascript" src="js/requestAnimationFrame.js"></script> 
+<script type="text/javascript" src="js/fly.js"></script>
+</html>

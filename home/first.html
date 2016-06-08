@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>靓人</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="img/logo.ico" rel="shortcut icon">
+    <link href="css/ihover.css" rel="stylesheet">
+    <link href="first.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top back-dh">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">
+            <img src="img/logo.jpg" alt="logo" class="logo-img"></a>            
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar">
+         <ul class="nav navbar-nav">
+        <!-- <li class="active"><a href="#">首页<span class="sr-only">(current)</span></a></li> -->
+          <li><a href="first.html">首页</a></li>
+          <li><a href="../user/liangren.html">造型师</a></li>
+          <li><a href="#">活动</a></li>
+          <li><a href="#">...</a></li>
+         </ul>
+          <ul class="nav navbar-nav navbar-right">
+          <li><a href="logged.html" id="pink">开启我的造型之旅 &raquo;</a></li> </ul>
+          <form class="navbar-form navbar-right" role="search">
+            <div class="form-group">             
+              <input type="text" class="form-control" placeholder="你感兴趣的...">
+            </div>
+            <button type="submit" class="btn btn-default">
+              <span class="glyphicon glyphicon-search"></span>
+            </button>
+          </form>        
+        </div> <!-- /.navbar-collapse -->
+      </div> <!-- /.container -->
+     </nav>
+    
+
+   <div class="jumbotron">   
+     <div class="container">
+       <div class="vert-text">
+        <h1>打造你的专属造型</h1>
+        <p>This is a private deal platform website for building personal images. 
+           Here,you can see lots of excellent styling designers.
+           We firmly believe that "a suitable one for you! "
+          Use it as a starting point to be a brand new self!</p>
+        <p>
+          <div class="buttonbox">
+           <a class="btn btn-success btn-lg" 
+              data-toggle="modal" data-target="#login-Modal">登录
+            <span class="glyphicon glyphicon-log-in"></span></a>
+           <a class="btn btn-info btn-lg"
+              data-toggle="modal" data-target="#signup-Modal">注册
+            <span class="glyphicon glyphicon-registration-mark"></span></a>
+            <!-- <a href='login.html' class="btn btn-success btn-lg">登录
+            <span class="glyphicon glyphicon-log-in"></span></a>
+           <a href='signup.html' class="btn btn-info btn-lg" >注册
+            <span class="glyphicon glyphicon-registration-mark"></span></a> -->
+          </div>
+         </p>
+       </div> <!-- /.vert-text-->       
+     </div> <!-- /.container-->  
+   </div> <!-- /.jumbotron-->
+
+
+   <!-- 登录 -->
+    <div class="modal fade" id="login-Modal" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close"
+                        data-dismiss="modal" aria-hidden="false">
+                    &times; </button>
+                <h4 class="modal-title" id="myModalLabel">登录 </h4>                
+            </div>
+            <div class="modal-body">
+              <form role="form">
+                 <div class="form-group">
+                    <label for="user">用户名</label><span id="userTip" style="color: red;"></span>
+                      <div class="input-group">
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                        <input type="text" class="form-control"  id="user-login" placeholder="输入用户名"> </div>                    
+                 </div>
+                <div class="form-group">
+                    <label for="pass">密码</label><span id="passTips" style="color: red;"></span>
+                      <div class="input-group">
+                        <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                        <input type="password" class="form-control" id="pass" placeholder="输入密码">
+                        <input type="text" class="form-control" id="pass-1" placeholder="输入密码" style="display: none">
+                        <span class="input-group-addon"><span id="seePass" class="glyphicon glyphicon-eye-close" style="cursor: pointer"></span></span>   </div>                        
+                </div>
+                <div class="checkbox"> <label> <input type="checkbox">记住我 </label> </div>
+              </form>              
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-" data-dismiss="modal">取消 </button>
+                <button type="button" id="log" class="btn btn-success">  登录   </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+
+
+    <!-- 注册 -->
+    <div class="modal fade" id="signup-Modal" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close"
+                        data-dismiss="modal" aria-hidden="false">
+                    &times; </button>
+                <h4 class="modal-title" id="myModalLabel">注册新用户 </h4>
+            </div>
+            <div class="modal-body">
+                <form role="form">
+                    <div class="form-group">
+                        <label for="user">用户名</label><span id="userTips" style="color: red;"></span>
+                        <div class="input-group">
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                            <input type="text" class="form-control"  id="user" placeholder="输入用户名">
+                        </div>
+                        <span >提示：注册用户名长度为6-20个字符</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">邮箱</label><span id="emailTips" style="color: red;"></span>
+                        <div class="input-group">
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
+                            <input type="email" class="form-control" id="email" placeholder="输入邮箱账号">
+                        </div>
+                        <span >提示：邮箱格式为**@**</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="pass1">密码</label><span id="pass1Tips" style="color: red;"></span>
+                        <div class="input-group">
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                            <input type="password" class="form-control" id="pass1" placeholder="输入密码">
+                            <input type="text" class="form-control" id="pass1-1" placeholder="输入密码" style="display: none">
+                            <span class="input-group-addon"><span id="seePass1" class="glyphicon glyphicon-eye-close" style="cursor: pointer"></span></span>
+                        </div>
+                        <span >提示：密码长度为6-20个字符</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="pass2">确认密码</label><span id="pass2Tips" style="color: red;"></span>
+                        <div class="input-group">
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                            <input type="password" class="form-control" id="pass2" placeholder="重复输入密码">
+                            <input type="text" class="form-control" id="pass2-1" placeholder="重复输入密码" style="display: none">
+                            <span class="input-group-addon"><span id="seePass2" class="glyphicon glyphicon-eye-close" style="cursor: pointer"></span></span>
+                        </div>
+                        <span >提示：重复密码须和注册密码相同</span>
+                    </div>
+                    <div class="checkbox"><label> <input type="checkbox">记住我</label> </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-"  data-dismiss="modal">取消 </button>
+                <button type="button" id="reg" class="btn btn-info"> 注册 </button> </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+<!--  build your exclusive modelling -->
+ <div class="product"><p>我们的产品</p></div>
+<div class="container ">
+   
+    <div class="col-xs-3">
+      <div class="ih-item circle effect"><a href="#">
+        <div class="spinner"></div>
+        <div class="img"><img src="img/shaiba.jpg" alt="img"></div>
+        <div class="info">
+          <div class="info-back">
+            <h3>晒吧<span class='glyphicon glyphicon-camera'></span> </h3>
+
+            <p>晒出你的自信</p>
+          </div>
+        </div></a></div>
+    </div> <!-- /.col-xs-3-->
+    <div class="col-xs-3"> 
+      <div class="ih-item circle effect" ><a href="../user/liangren.html">
+          <div class="spinner"></div>
+          <div class="img"><img src="img/zaoxing.jpg" alt="img"></div>
+          <div class="info">
+            <div class="info-back">
+              <h3>造型师<span class='glyphicon glyphicon-check'></span></h3>
+              <p>开启你的造型之旅</p>
+            </div>
+          </div></a></div>    
+    </div><!-- /.col-xs-3-->
+
+    <div class="col-xs-3">     
+      <div class="ih-item circle effect"><a href="#">
+          <div class="spinner"></div>
+          <div class="img"><img src="img/hot.jpg" alt="img"></div>
+          <div class="info">
+            <div class="info-back">
+              <h3>热品<span class='glyphicon glyphicon-heart'></span></h3>
+              <p>这里有最新热品，你一定会喜欢！</p>
+            </div>
+          </div></a></div>   
+      </div> <!-- /.col-xs-3-->
+
+    <div class="col-xs-3">     
+      <div class="ih-item circle effect"><a href="#">
+          <div class="spinner"></div>
+          <div class="img"><img src="img/question.jpg" alt="img"></div>
+          <div class="info">
+            <div class="info-back">
+              <h3>联系我们<span class='glyphicon glyphicon-send'></span></h3>
+              <p>如遇到问题，请联系我们</p>
+            </div>
+          </div></a></div>   
+      </div> <!-- /.col-xs-3-->
+</div>
+
+  <div class="copyright">    
+       <p>版权所有 © Copyright   靓人团队  粤ICP备16019377号-1</p>      
+  </div>
+
+    <script src="js/bootstrap.min.js"></script>  
+    <script src="js/jquery-1.12.2.min.js"></script>  
+    <script src="js/modal.js" ></script>
+    <script src="js/tooltip.js"></script>
+    <script src="js/check.js"></script><!--signup-->
+    <script src="js/login.js"></script><!--login-->
+  </body>
+</html>

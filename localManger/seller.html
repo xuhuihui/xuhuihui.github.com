@@ -1,0 +1,39 @@
+<!DOCTYPE>
+<html>
+<head>
+    <title>管理员界面</title>
+    <script src="jquery-1.12.3.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="css/seller.css">
+    
+    
+</head>
+<body>
+    <div class="headline"></div>    
+    <div class="col_mini">
+        <div class="miniline"><span id="miniline">销售分析</span></div>
+        <div class="dropdown" id="drop">
+            <button type="button" class="btn dropdown-toggle" id="dropdownMenu1" 
+      data-toggle="dropdown">
+      今日
+            <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+            <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="#" id="sevenday" onclick="sevenday()">最近7天</a>
+            </li>
+            <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="#" id="fifteenday" onclick="fifteenday()">最近15天</a>
+            </li>
+            <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="#" id="thirtyday" onclick="thirtyday()">最近30天</a>
+            </li>
+        </div>
+        <div id="main"></div>
+        <script src="echarts-2.2.7/build/dist/echarts.js"></script>
+        <script src="js/seller.js"></script>
+        
+    </div>
+</body>
+</html>

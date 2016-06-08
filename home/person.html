@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>靓人-个人信息</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="img/logo.ico" rel="shortcut icon">
+    <link href="css/ihover.css" rel="stylesheet">
+    <link href="first.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>  
+    <div class="container-fluid  person-body">  
+      <ul class="nav nav-pills">
+        <li role="presentation"><a href="#">
+          <span class="glyphicon glyphicon-edit"></span>&nbsp;个人信息</a></li> </ul>  
+ 
+      <div class="col-xs-2" id='list'>
+        <ul class="nav nav-pills nav-stacked">
+          <li role="presentation"><a href="#" data-toggle="modal" data-target="#basic">
+            <span class="glyphicon glyphicon-th-list"></span>&nbsp;&nbsp;基本资料</a></li>
+          <li role="presentation"><a href="#" data-toggle="modal" data-target="#head-pic">
+            <span class="glyphicon glyphicon-picture"></span>&nbsp;&nbsp;我的头像</a></li>
+          <li role="presentation"><a href="#" data-toggle="modal" data-target="#mypass">
+            <span class="glyphicon glyphicon-lock"></span>&nbsp;&nbsp;密码管理</a></li>
+          <li role="presentation"><a href="#" data-toggle="modal" data-target="#record">
+            <span class="glyphicon glyphicon-book"></span>&nbsp;&nbsp;成长记录</a></li>
+        </ul>        
+      </div>   
+
+  <div class="modal fade" id="basic" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="false"> &times; </button>
+                <h4 class="modal-title" id="myModalLabel">基本资料 </h4>                
+            </div>
+            <div class="modal-body">              
+               <div class="" id='basic'>
+                  &nbsp;&nbsp;&nbsp;&nbsp;
+                  <div class="input-group box ">
+                    <span class="input-group-addon" id="user-name">用户名:&nbsp;</span>
+                    <input type="text" class="form-control" value="ankhwyf" aria-describedby="">
+                  </div>
+                  <div class="input-group box ">
+                    <span class="input-group-addon" id="user-email">邮箱:&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <input type="text" class="form-control" value="1422174381@qq.com" aria-describedby="">
+                  </div>
+                  
+                  <div class="input-group box ">
+                    <span class="" id="user-gender">&nbsp;&nbsp;性别:&nbsp;</span>
+                    <input type="radio" name="gender" value="male" required checked/>&nbsp;&nbsp;男 
+                    <input type="radio" name="gender" value="female"/>&nbsp;&nbsp;女 
+                  </div>        
+                  <div class="input-group box ">
+                    <span class="input-group-addon" id="user-birth">出生年月:</span>
+                    <input type="text" class="form-control" value="2000/01/01" aria-describedby="">
+                  </div>       
+               </div>           
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-" data-dismiss="modal">取消 </button>
+                <button type="button" id="save-basic" class="btn btn-success">  保存   </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+
+<div class="modal fade" id="head-pic" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="false"> &times; </button>
+                <h4 class="modal-title" id="myModalLabel">我的头像</h4>                
+            </div>
+            <div class="modal-body">              
+                      
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-" data-dismiss="modal">取消 </button>
+                <button type="button" id="upload" class="btn btn-success">  上传   </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+
+<div class="modal fade" id="mypass" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="false"> &times; </button>
+                <h4 class="modal-title" id="myModalLabel">密码管理</h4>                
+            </div>
+            <div class="modal-body">              
+                      
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-" data-dismiss="modal">取消 </button>
+                <button type="button" id="save-pw" class="btn btn-success">  保存  </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+
+
+<div class="modal fade" id="record" tabindex="-1" role="dialog"
+     aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="false"> &times; </button>
+                <h4 class="modal-title" id="myModalLabel">成长记录</h4>                
+            </div>
+            <div class="modal-body">              
+                      
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-" data-dismiss="modal">关闭 </button>
+                <button type="button" id="share" class="btn btn-success"> 分享  </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+     
+
+    <script src="js/jquery-1.12.2.min.js"></script>    
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

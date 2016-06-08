@@ -1,0 +1,178 @@
+body{
+    width: 700px;
+}
+#hostmanger{
+    background-color: #44B549;
+    color:white;
+}
+#hostmanger:hover{
+    background-color: #44B549;
+}
+#miniline{
+    display: block;
+    font-family: "微软雅黑";
+    line-height: 50px;
+    font-size: 18px;
+    margin-left: 10px;
+    border-bottom: 1px solid #44B549;
+}
+#ask{
+    margin: 25px 20px;
+}
+#box{
+    width: 100%;
+    height: 30px;
+    border: 1px solid #ccc;
+    margin: 0px 20px;
+}
+#box_word{
+    display: block;
+    line-height: 30px;
+    font-family: "微软雅黑";
+    font-size: 13px;
+    margin-left: 15px;
+}
+#hostBox{
+    width: 100%;
+    border: 1px solid #ccc;
+    margin: 0px 20px;
+    border-top: white;
+}
+.host{
+    width: 100%;
+    height: 700px;
+    font-size: 14px;
+    background-color: #fff;
+    text-align: center;
+    border-top: 1px solid #e7e7eb;
+    border-bottom: 1px solid #e7e7eb;
+    border-spacing: 0;
+}
+#yonghu_line{
+    height: 40px;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    background-color: #F4F5F9;
+}
+.yonghu{
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+#selectAll{
+    background-color: lightblue;
+    margin: 10px;
+    border:none;
+    /*display: block;*/
+    font-family: "微软雅黑";
+}
+#search{
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 28px;
+    /*border: 1px solid #ccc;*/
+    top: 75px;
+    left: 198px;
+}
+#sear{
+    display: block;
+    position: absolute;
+    left: 5px;
+    font-size: 20px;
+    line-height: 28px;
+}
+.thead{
+    background-color: #F4F5F9;
+    border-bottom: 1px solid #ccc;
+}
+.select_host{
+    display: block;
+    width: 70px;
+    height: 30px;
+    margin-left: 5px;
+    font-family: "Microsoft yahei";
+    font-size: 15px;
+    font-weight: lighter;
+}
+#check{
+    margin: 8px;
+}
+table{
+    border-color: gray;
+}
+td{
+    width: 65%;
+    height: 60px;
+}
+.table_lleft{
+    border-bottom: 1px solid #ccc;height: 60px;
+}
+.table_left{
+    border-bottom: 1px solid #ccc;height: 60px;
+}
+.table_rright{
+    border-bottom: 1px solid #ccc;height: 60px;
+}
+.mangerline{
+    height: 100%;
+    width: 85%;
+/*    border: 1px solid;*/
+    position: relative;
+}
+#ppp{
+    position: absolute;
+    left: 10px;
+    width: 48px;
+    margin: 10px;
+}
+#name{
+    position: absolute;
+    left: 20%;
+    top: 8px;
+    font-family: "Microsoft yahei";
+}
+#dropdownMenu1{
+    position: absolute;
+    left: 20%;
+    top: 33px;
+}
+#chosse{
+    position: absolute;
+    left: 10
+}
+.item{
+    width: 100%;
+    height: 100px;
+    border: 1px solid #ccc;
+    border-top:1px solid white;
+    border-bottom:1px solid white;
+    margin:0px;
+    border-top:1px solid #ccc;
+    
+}
+.pi{
+    margin: 15px;
+    margin-left: 15px;
+}
+.name{
+    font-family: "Microsoft yahei";
+    line-height: 30px;
+    font-size:20px;
+    left: 2%;
+}
+.change{
+    width: 80px;
+    height: 30px;
+    position: absolute;
+    
+    left: 43%;
+}
+#change{
+    display: block;
+    line-height: 30px;
+    text-align: center;
+    font-family: "Microsoft yahei";
+    margin-top: -60px;
+    background-color: #ccc;
+}

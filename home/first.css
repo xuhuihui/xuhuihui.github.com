@@ -1,0 +1,196 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    letter-spacing: 0.5px;
+    font-family: "微软雅黑";
+    line-height: 1.6;
+    font-size: 18px;
+    background-color: #dfc9eb;
+}
+/*第一部分*/
+.logo-img,.head-img {
+    width: 39px;
+    height: 37px;
+    margin-left: -60px;
+    border-radius: 1.8em;
+}
+.navbar-brand {
+    padding: 3px 0 0 20px;
+    margin-top: 5px;
+}
+.back-dh {
+    margin-bottom: 0;
+   background: #dfc9eb;
+}
+#pink {
+    margin-right: -80px;
+    color: #f13c73;   /*#ff9966;*/    
+}
+#pink:hover{
+    color: #e40045;   /*ff0033;*/
+}
+/*第二部分*/
+.vert-text {  
+    margin-top: 8%;  
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.vert-text h1 {   
+   margin-left: 2%;
+   margin: inherit;
+   padding-bottom: 5%;
+   border-bottom: solid 1px #aaa;
+}
+.vert-text p {
+   padding-bottom: 2%;
+}
+.jumbotron .buttonbox {
+    margin-top: -20px;
+}
+.jumbotron .btn {
+    width: 16%;
+    margin: 10px;
+    font-weight: 100;
+}
+
+.jumbotron,.jumbotron-login {
+    width: 100%;
+    height: 100%;   
+    background: url(img/back.png);
+}
+.jumbotron-login {
+    height: 60%;
+}
+.jumbotron,.jumbotron-login h1 ,p{
+    color: #aaa;
+}
+.glyphicon-camera 
+.glyphicon-send
+.glyphicon-check
+.glyphicon-heart {
+    font-size: 16px;
+}
+.product,
+.copyright {    
+    padding: 5px 0;
+    margin-top: 3%;
+    height: 5%;   
+    background-color: #a56cd8;
+}
+.copyright p {   
+   height: 50px;
+   text-align: center;
+   font-size: 15px;
+   color: #7c1f7c;
+}
+
+/**********************************/
+/*login 登录......................*/
+/**********************************/
+#login-Modal {
+    margin-left: 100px;
+    margin-top: 100px;   
+    /*background-color: #dfc9eb;*/
+}
+#login-btn,#signup-btn { 
+    width: 100%;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    background-color: #ad66d5;
+}
+.text-align {
+    text-align: center;
+    font-size: 15px;   
+}
+
+.control-label .glyphicon-phone,
+.control-label .glyphicon-log-in,
+.control-label .glyphicon-registration-mark,
+.control-label .glyphicon-lock {
+     font-size: 20px;
+     color: #5e0dac;
+}
+.input-group .glyphicon-user,
+.input-group .glyphicon-envelope,
+.input-group .glyphicon-lock {
+    color: #5e0dac;
+}
+.login,.signup {
+    width: 55%;
+    height: 40%;
+    margin-top: -3%;
+    padding-top: 3%;
+    background-color: #fff;
+}
+#copyright {
+    margin-top: 10%;
+}
+/**********************************/
+/*signup 注册....................../
+/**********************************/
+.modal-header {
+    background: #dfc9eb;
+}
+#choose {
+    margin-top: -2%;
+    margin-left: 17%;
+}
+.radio-inline p {
+    font-size: 13px;
+    color: #bfb730;
+}
+.signup {
+    height: 45%;
+}
+/**********************************/
+/*logged 已登录..................../
+/**********************************/
+.head-img {
+    margin-top: -15px;
+    margin-right: -10px;
+    margin-left: 100px;
+    width: 45px;
+    height: 45px;
+}
+.user {
+    padding: 0;
+    margin-right: -70px;
+}
+/*轮播*/
+ .carousel {
+    margin-top: 5.5%;
+ }
+/*购物车信息*/
+.shop {
+    background: #b9f73e;
+    color: #ff0000;
+}
+.product {
+    margin-bottom: 3%;
+    background: #d6f870;
+}
+.product p {
+    text-align: center;;
+    line-height: 20px;
+    color: #be008a;
+    font-weight: bold;
+}
+/**********************************/
+/*person 个人信息................../
+/**********************************/
+.person-body {
+   height: 7%;   
+   border-bottom: 1px solid  #aaa;
+}
+#list {
+    margin-top: 45px;
+    border-right: 1px solid #aaa;
+}
+.box {
+    height: 20%;
+    padding: 10px;    
+}

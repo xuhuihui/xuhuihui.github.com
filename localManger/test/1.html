@@ -1,0 +1,86 @@
+<html>
+<head>
+	<title>Try</title>
+	<script type="text/javascript" src="1.js"></script>
+
+	<link type="text/css" rel="stylesheet" href="base.css">
+<link type="text/css" rel="stylesheet" href="style.css">
+<script src="jquery-1.7.2.min.js"></script>
+<script src="jquery.easing.min.js"></script>
+</head>
+<body class="less_h710" style="background-color:white">
+	
+    <div class="content">
+    	<div class="section section1 animate-exit" data-page="true" style="width:100%;height: 640px;">
+        	<div class="section_wrap" data-visiondiff="true" style="top: 384px;">
+            	<div class="section_inner">
+                	<img src="title1.png"  class="app_title animated fadeInDown fadeInUp duration0d5s">
+                    <p class="app_txt" style="color:black">欢迎来到管理员板块,这个板块是统计和管理板块，管理员可以通过这个板块来对用户和信息进行处理</p>
+                    <img src="img/pic1.jpg" class="app_code">
+                    <br /><br />
+                    <ul class="app_process clearfix">
+                    	<!--<li class="ap1 animated scaleIn scaleOut delay0d2s"><a class="img"></a><p style="color:black;line-height:200px;" >管理员板块分为三个板块</p></li>-->
+                        <li class="ap2 animated scaleIn scaleOut delay0d3s" ><a class="img"><img src="img/pic2.jpg" style="width:200px" alt="用户管理"></a><p style="color:black">用户管理</p></li>
+                        <br />
+                        <li class="ap3 animated scaleIn scaleOut delay0d4s"><a class="img"><img src="img/pic3.jpg" style="width:200px" alt="消息管理"></a><p style="color:black">消息管理</p></li>
+                        <li class="ap4 animated scaleIn scaleOut delay0d5s"><a class="img"><img src="img/pic4.jpg" style="width:200px" alt="销售分析"></a><p style="color:black">销售分析</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+<script>
+	
+	window.onload=function(){
+		var clientHeight=document.documentElement.clientHeight;
+		if(clientHeight>710&&clientHeight<=900){
+			document.getElementsByTagName("body")[0].className="less_h900";
+		}else if(clientHeight<=710){
+			document.getElementsByTagName("body")[0].className="less_h710";
+		}else{
+			document.getElementsByTagName("body")[0].className="";			
+		}
+	}
+</script>
+<script src="pageCtrl.js"></script>
+<script>
+	$(function(){
+		
+		var pageCtrl = new PageCtrl({
+			wrapper: $('.content'),
+			sideNav:$("#side_nav li"),
+			easing:"easeInOutExpo",
+			duration:1200
+		});	
+		
+		
+		$(".app_nav li").each(function(i,n){
+			$(this).click(function(){
+				showTab(i);
+				$(".app_dialog_wrap").show();
+			})
+		});
+		
+		
+		
+		$(".adg_close").click(function(){
+			$(".adg_cons").hide();
+			$(".app_dialog_wrap").hide();
+		})
+		
+		
+		$(".adg_tab li").each(function(i,n){
+			$(this).mouseover(function(){
+				showTab(i);
+			})	
+		})
+		
+		
+		
+	})
+</script>
+
+</body>
+</html>
